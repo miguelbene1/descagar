@@ -1,0 +1,88 @@
+body{
+    background: linear-gradient(150deg,red,blue);/*FONDO DOBLE COLOR EN LINEA HORIZONTAL 2 colores en linea */
+    height: 100vh;/*ESTE ES QUE QUE LO ACOMODA (el que lo une) */
+    
+}
+.formulario{
+    position:absolute; /*centra*/
+    top: 50%;/*bajar*/          /*de position hasta transform centra el codigo*/
+    left: 50%;/*izquierdad pocision*/
+    transform: translate(-50%,-50%);
+    width: 400px; /*ancho*/
+    background: white;
+    border-radius: 10px; /*borde del centro del login*/
+}
+.formulario h1{
+    text-align: center; /*centrar mesage de subtitulo*/
+    padding: 0 0 20px 0; /*espacio entre inicio de sesion y los datos que piden*/
+    border-bottom: 1px solid rgb(163, 23, 238);/*linea debajo de inicio de sesion*/
+}
+.formulario form{
+    padding: 0 40px;/*centra la toda lo que haiga en esa etiqueta*/
+    box-sizing: border-box; /*?*/
+}
+form .user{
+    position: relative; /*?*/
+    border-bottom: 2px solid #adadad;/*subrara los datos a pedir y el input*/
+    margin: 30px 0; /*margen (separa) entre el dato 1 y el dato 2 vertical*/
+}
+
+.user label{
+    position:  absolute; /*pocision del dato a pedir*/
+    top: 0%;
+    left: 5px;/*top left posicion y altura*/
+    color: #7f7e82; /*color*/
+    transform: translateY(-50%);/*escribre debajo de dato*/
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+   
+}
+.user input{
+    width: 150px; /*ancho del input*/
+    padding: 0 5px; /*(relleno)en 0 es para la altura y el 5 es para el largo del input*/
+    height: 90px;  /*(altura)   de los input */
+    font-size: 50 px; /*?*/
+    border: none;/*input invisible*/
+    outline: none;/*contorno ?*/ 
+
+}
+/*este codigo hace que el dato se suba para escribir*/
+
+.user input:focus ~ label,
+.user input:focus ~ label{
+
+top: -5px;
+color: #6C3483;
+}
+.user input:focus ~ span::before,
+.user input:focus ~ span::before{
+    width: 100px;
+}
+/*olvido su contraseña*/
+.recordar{
+    margin: -5px 0 20px 5px;
+    color: blue;
+}
+/*linea debajo*/
+.recordar:hover{
+    text-decoration: underline;
+}
+/*boton diseño*/
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #6C3483;
+    border-radius: 25px; /*formar al boton*/
+    font-size: 18px; /*tamaño de letra*/
+    color: white;
+    cursor: pointer;
+    outline: none;
+  
+}
+/*animacion de boton se infla*/
+input[type="submit"]:hover{
+    border-color: purple;
+    transition: .10s;
+}

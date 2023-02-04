@@ -1,0 +1,182 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #82a6c3;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav{
+    width: 300px; /* ancho del menu*/
+}
+
+.nav__link{
+    color: #dadada;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.nav__link--inside{
+    border-radius: 6px ;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.nav__link--inside:hover{
+    background: #8196ac;
+}
+
+.list{
+    width: 92%; /*ancho de menu*/
+    height: 100vh; /*grande del menu*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: rgb(0, 0, 0);
+}
+
+.list__item{
+    list-style: none;
+    width: 90%; /*Ancho de a letra del menu*/    
+    text-align: center;
+    overflow: hidden;
+    top: 2%;
+}
+
+.list__item--click{
+    cursor: pointer;
+}
+
+.list__button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .list__arrow{
+    transform: rotate(90deg);
+}
+
+.list__arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.list__show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #e0e1e3; /*linea de sistemas*/
+    list-style: none;
+    transition: height .9s;
+    height: 0; /*sistema operatvo deliza*/
+    top: 15%;
+}
+.miguel{
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.foto{
+    position: absolute;
+    top: 4%;
+}
+.titulo{
+    position: absolute;
+    top: 5%;
+    right: 34%;
+    color: rgb(246, 242, 242);
+    font-family: 'Times New Roman';
+    border-style: solid;
+   border-color:  rgb(232, 229, 229);
+   border-radius: 10px;
+   font-size: 40px;
+    
+
+}
+/*------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 50px;
+}
+
+.slider-frame {
+    position:absolute;
+	width: 800px;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+    left: 30%;
+    top: 12%;
+    border-radius: 20%;
+
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+.pagos{
+    position: absolute;
+    top: 91%;
+    left: 3%;
+    height: 10px;
+}
+
+.eme{
+    position:absolute;
+    color: white;
+    top: 3%;
+    left: 3%;
+    font-size: 300%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.bienven{
+    position: absolute;
+    top: 5%;
+    left: 48%;
+    color: aliceblue;
+}
