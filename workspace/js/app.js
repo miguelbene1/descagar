@@ -36,23 +36,72 @@ function pareimpar(){
 }
         
 
-function pintar(){
 
-    const pintar = document.getElementById("pintar");
-    const fruits = ["Banana", "Orange", "Apple", "Mango"];
-    let fLen = fruits.length;
+//guardar array
+   function guardar(){
+    var nombre =  document.getElementById("nombres").value;
+    var apellido =  document.getElementById("apellidos").value;
 
-   let text = "<ul>";
-   for (let i = 0; i < fLen; i++) {
-   text += "<li>" + fruits[i] + "</li>";
-  }
-   text += "</ul>";
+    if (nombre==""){
+        alert("es obligatorio");
+        document.getElementById("nombres").focus();
+    }else{
+        if (apellido==""){
+            alert("apellido es obligatorio");
+            document.getElementById("apellidos").focus();
 
-   pintar.innerHTML = ul;
+    }else{
+        console.log(nombre +" "+apellido);
+        document.getElementById("nombres").value="";
+        document.getElementById("apellidos").value="";
+        document.getElementById("nombres").focus();
+    }
+    }
 
-   }
+    
+}
+function sumar() {
+    var numero1 = document.getElementById('numero1').value;
+    var numero2 = document.getElementById('numero2').value;
 
+    if (numero1 !== '' && numero2 !== '') {
+        var suma = parseInt(numero1) + parseInt(numero2);
+        document.getElementById('resultado').value = suma;
+    }
+
+}function restar() {
+    var numero1 = document.getElementById('numero1').value;
+    var numero2 = document.getElementById('numero2').value;
+
+    if (numero1 !== '' && numero2 !== '') {
+        var restar = parseInt(numero1) - parseInt(numero2);
+        document.getElementById('resultado').value = restar;
+    }
+}function multiplicar() {
+    var numero1 = document.getElementById('numero1').value;
+    var numero2 = document.getElementById('numero2').value;
+
+    if (numero1 !== '' && numero2 !== '') {
+        var multiplicar = parseInt(numero1) * parseInt(numero2);
+        document.getElementById('resultado').value = multiplicar;
+    }
+}function dividir() {
+    var numero1 = document.getElementById('numero1').value;
+    var numero2 = document.getElementById('numero2').value;
+
+    if (numero1 !== '' && numero2 !== '') {
+        var dividir = parseInt(numero1) / parseInt(numero2);
+        document.getElementById('resultado').value = dividir;
+    }
+}
+    function limpiar(){
+        document.getElementById("numero1").value="";
+        document.getElementById("numero2").value="";
+        document.getElementById("resultado").value="";
+       
+
+    }
    
-
+ 
 
 

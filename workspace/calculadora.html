@@ -4,65 +4,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <link href="style/calcular.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
-  <body>
-    
+  <body > 
+    <center>
+    <div class="centro" >
+        <h1>calculadora</h1>
+        <h1>-----------------</h1>
     <label for="numero1">Numero 1</label>
-    <input type="text" id="numero1" onchange="sumar();"><br>
+    <input type="text" id="numero1" onchange="sumar();">
+ 
+    <br>
+
 
     <label for="numero2">Numero 2</label>
     <input type="text" id="numero2" onchange="sumar();"><br>
-
-    <label for="resultado">Resultado</label>
+  
+  <h1>-----------------</h1>
+    <label for="resultado">Resultado</label><br>
     <input type="text" id="resultado">
+    <h1>----------------</h1>
 
     <p>
-        <a href="#" class="btn btn-primary" onclick="sumar('')"> sumar</a>
-        <a href="#" class="btn btn-primary" onclick="restar('')"> restar</a>
-        <a href="#" class="btn btn-primary" onclick="multiplicar('')"> multiplicar</a>
-        <a href="#" class="btn btn-primary" onclick="dividir('')"> dividir</a>
+        <button class="suma" onclick="suma('')" >suma</button>
+        <button class="restar" onclick="restar('')" >restar</button>
+        <button class="multi" onclick="multiplicar('')" >multiplicar</button>
+        <button class="dividir" onclick="dividir('')" >dividir</button>
+        <button class="limpiar" onclick=" limpiar('')" >Limpiar</button>
+       
+       
     </p>
+</div>
+</center>
 </button>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script>
     
-        function sumar() {
-            var numero1 = document.getElementById('numero1').value;
-            var numero2 = document.getElementById('numero2').value;
-
-            if (numero1 !== '' && numero2 !== '') {
-                var suma = parseInt(numero1) + parseInt(numero2);
-                document.getElementById('resultado').value = suma;
-            }
-
-        }function restar() {
-            var numero1 = document.getElementById('numero1').value;
-            var numero2 = document.getElementById('numero2').value;
-
-            if (numero1 !== '' && numero2 !== '') {
-                var restar = parseInt(numero1) - parseInt(numero2);
-                document.getElementById('resultado').value = restar;
-            }
-        }function multiplicar() {
-            var numero1 = document.getElementById('numero1').value;
-            var numero2 = document.getElementById('numero2').value;
-
-            if (numero1 !== '' && numero2 !== '') {
-                var multiplicar = parseInt(numero1) * parseInt(numero2);
-                document.getElementById('resultado').value = multiplicar;
-            }
-        }function dividir() {
-            var numero1 = document.getElementById('numero1').value;
-            var numero2 = document.getElementById('numero2').value;
-
-            if (numero1 !== '' && numero2 !== '') {
-                var dividir = parseInt(numero1) / parseInt(numero2);
-                document.getElementById('resultado').value = dividir;
-            }
-        }
+   
+        
 
     </script>
-    </script>
+    <script src="js/app.js"></script>
   </body>
 </html>

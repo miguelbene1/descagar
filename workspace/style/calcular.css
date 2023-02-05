@@ -1,0 +1,93 @@
+.centro{
+    position:absolute;
+    top: 20%;
+    left: 30%;
+    background: rgb(82, 170, 71);
+    height: 70%;
+    
+   
+    width: 600px; /*ancho*/
+   
+    border-radius: 15px; /*borde del centro del login*/
+}
+
+.suma{
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    background: blue;
+    border: 1px solid ;
+    border-radius: 20%;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    width: 20%;
+    height: 10%;
+    
+}
+.suma:hover{
+    border-color: blue;
+    transition: .10s;
+}
+
+.restar{
+    position: absolute;
+    top: 80%;
+    left: 24%;
+    background: blue;
+    border: 1px solid ;
+    border-radius: 20%;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    width: 20%;
+    height: 10%;
+    
+}
+.restar:hover{
+    border-color: blue;
+    transition: .10s;
+}
+
+.multi{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    background: blue;
+    border: 1px solid ;
+    border-radius: 20%;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    width: 25%;
+    height: 10%;
+    
+}
+.multi:hover{
+    border-color: blue;
+    transition: .10s;
+}
+
+.dividir{
+    position: absolute;
+    top: 80%;
+    right: 0%;
+    background: blue;
+    border: 1px solid ;
+    border-radius: 20%;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    width: 20%;
+    height: 10%;
+    
+}
+.dividir:hover{
+    border-color: blue;
+    transition: .10s;
+}
+.limpiar{
+    position:absolute;
+    top: 50%;
+    left: 5%;
+}

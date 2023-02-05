@@ -1,0 +1,27 @@
+.hola{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    background: rgb(119, 119, 183);
+    height: 50%;
+    width: 30%;
+    border-radius: 20%;
+}
+.suma{
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    background: blue;
+    border: 1px solid ;
+    border-radius: 20%;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    width: 20%;
+    height: 10%;
+    
+}
+.suma:hover{
+    border-color: blue;
+    transition: .10s;
+}
