@@ -1,0 +1,47 @@
+<?php
+
+$servidor = "localhost";
+$usuario = "root";
+$clave = "";
+$basededato = "ejemplo";
+
+$enlace = mysqli_connect ($servidor , $usuario , $clave , $basededato);
+
+?>
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+
+ <form action="#" name="ejemplo" method="post">
+   
+       
+        
+       <input type="text" name= "nombre" placeholder="nombre">
+       <input type="text" name= "clave" placeholder="clave">
+
+       <input type="submit" name="registro">
+       <input type="reset">
+  </form>
+   
+  </body>
+
+<?php
+
+if(isset ($_POST['registro'])){
+
+    $nombre= $_POST ['nombre'];
+    $contrasena= $_POST ['clave'];
+
+    $insertadatos = "INSERT INTO datos VALUES('$nombre','$contrasena','')";
+
+    $ejecutarInserta = mysqli_query ($enlace , $insertadatos);
+
+}
+
+?>
